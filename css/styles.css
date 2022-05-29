@@ -161,6 +161,7 @@ img {
   color: inherit;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 .contact-tel:hover .contact-tel-icon,
 .contact-tel:focus .contact-tel-icon {
@@ -206,7 +207,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-background-color);
-  display: flex;
 }
 .footer-container {
   display: flex;
@@ -512,12 +512,6 @@ img {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .clients-item:not(:last-child) {
@@ -525,6 +519,9 @@ img {
 }
 
 .clients-link {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,8 +537,8 @@ img {
   fill: var(--accent-color-blue);
 }
 
-.clients-item:hover,
-.clients-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-color-blue);
 }
 
@@ -605,15 +602,16 @@ img {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
-.portfolio-project-item:hover,
-.portfolio-project-item:focus {
-  /* margin: 15px; */
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .portfolio-project-link {
   text-decoration: none;
   color: inherit;
+  display: block;
+}
+.portfolio-project-link:hover,
+.portfolio-project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-project-card {
