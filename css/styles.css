@@ -520,6 +520,8 @@ img {
 
 .clients-link {
   display: flex;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
@@ -531,12 +533,14 @@ img {
   justify-content: center;
   fill: var(--accent-fill);
 }
-
-.clients-item:hover .clients-icon,
+/* .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
   fill: var(--accent-color-blue);
+} */
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color-blue);
 }
-
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color-blue);
